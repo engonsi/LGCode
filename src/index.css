@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+table {
+  width: 960px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+th {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem;
+}
+tr:nth-child(even) {
+  background-color: #e8e8e8;
+  transition: background-color 250ms ease-in-out;
+}
+
+tr:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+td {
+  padding: 0.5rem;
+}
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: 0;
+  outline: none;
+  border-radius: 0.5rem;
+  transition: background-color 250ms ease-in-out;
+}
+
+button:hover {
+  background-color: #555;
+  cursor: pointer;
+}
+
+.comments {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  background-color: #fff;
+  top: 2rem;
+  left: 50%;
+  padding: 1rem;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  width: 300px;
+  gap: 1rem;
+  transform: translateX(-50%);
+}
+
+.comments .head {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  padding: 0.25rem;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0.25rem;
+}
