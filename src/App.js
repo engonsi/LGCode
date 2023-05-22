@@ -6,7 +6,7 @@ function App() {
   const [posts, setPosts] = useState()
   const [comments, setComments] = useState()
 
-  const [show, setShow] = useState(true)
+  const [show, setShow] = useState(false)
 
   const getData = async () => {
     const response = await fetch('https://dummyjson.com/posts')
