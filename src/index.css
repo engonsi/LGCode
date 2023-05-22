@@ -54,7 +54,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   top: 2rem;
   left: 50%;
